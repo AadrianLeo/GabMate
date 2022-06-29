@@ -10,7 +10,7 @@ import './App.css';
 
 const cookies = new Cookies();
 
-const apiKey = 'nn4mvfsvemfb';
+const apiKey = '<YOUR_STREAMCHAT_API_KEY>';
 const authToken = cookies.get("token");
 
 const client = StreamChat.getInstance(apiKey);
