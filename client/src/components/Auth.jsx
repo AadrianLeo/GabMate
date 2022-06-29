@@ -28,7 +28,8 @@ const Auth = () => {
 
         const { username, password, phoneNumber, avatarURL } = form;
 
-        const URL = 'https://gabmate.herokuapp.com/auth';
+        const URL = 'http://localhost:3000/auth';
+//         const URL = 'http://<YOUR_HOSTED_SERVER_LINK>/auth';
 
         const { data: { token, userId, hashedPassword, fullName } } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
             username, password, fullName: form.fullName, phoneNumber, avatarURL,
